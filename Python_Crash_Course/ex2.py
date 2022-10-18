@@ -88,3 +88,56 @@ elif 3==3:
     print('middle')
 else: 
     print('last')
+
+
+#For Loops
+
+seq = [1,2,3,4,5]
+
+for item in seq:
+    print(item)
+
+#While loop
+
+i = 1
+
+while i < 5:
+    print('i is:{}'.format(i))
+    i = i + 1
+
+#Using Range
+
+for x in range(0,5):
+    print(x)
+
+range(0,5)
+
+
+#List Comprehension
+x = [1,2,3,4]
+out = []
+
+for item in x:
+    out.append(item ** 2)
+
+print(out)
+
+#Translate the above into list comprehension
+print([item ** 2 for item in x])
+
+#Functions
+def my_func(name):
+    print('Hello ' + name)
+
+my_func('Colby')
+
+def square(num):
+    """
+    DocString this can be whatever I want over multiple lines
+    This function squares a number
+    """
+    return num ** 2
+
+output = square(2)
+print(output)
+
