@@ -105,8 +105,8 @@ while i < 5:
     print('i is:{}'.format(i))
     i = i + 1
 
-#Using Range
 
+#Using Range
 for x in range(0,5):
     print(x)
 
@@ -141,3 +141,63 @@ def square(num):
 output = square(2)
 print(output)
 
+#Map and Filter Functions
+
+def times2(var):
+    return var * 2
+
+#map()
+
+seq = [1,2,3,4,5]
+
+print(map(times2,seq))
+print(list(map(times2,seq)))
+
+#lambda expression
+#rewrite times2 as a lambda
+print(list(map(lambda var: var*2, seq)))
+
+#built-in filter function
+#filter based on conditional True/Flase
+print(list(filter(lambda num: num%2 ==0, seq)))
+
+
+#Methods - calls to make off of an object
+s = 'hello my name is Colby'
+print(s.lower())
+print(s.upper())
+print(s.split())
+
+tweet = 'go sports! #Sports'
+
+print(tweet.split('#'))
+print(tweet.split('#')[1])
+
+d = {'k1': 1, 'k2': 2}
+print(d.keys())
+print(d.items())
+
+lst = [1,2,3]
+print(lst.pop())
+lst = [1,2,3,4,5]
+item = lst.pop()
+print(item)
+
+#'In' Operator
+
+print('x' in [1,2,3])
+
+print('x' in ['x','y','z'])
+
+#Tuple Unpacking
+
+x = [(1,2),(3,4),(5,6)]
+
+for item in x:
+    print(item)
+
+for (a,b) in x:
+    print(a)
+
+for a,b in x:
+    print(b)
