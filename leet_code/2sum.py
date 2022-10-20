@@ -24,3 +24,8 @@ def twoSumHashMap(nums, target):
 #         index = binary_search(target - num, nums)
 #         if index != -1:
 #             return [i, index]
+
+#What if the input array is sorted?
+#What about 3 numbers that sum to zero? Or 4 numbers?
+#What about input size 1TB and you a cluster of 1000 machines. Each machine has 100 MB memory, how do you perform 2sum using MapReduce principle?
+
